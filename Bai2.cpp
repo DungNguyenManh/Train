@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
@@ -9,10 +10,10 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         if (i == n)
-            printf("%d ", i);
+            printf("%d^2 ", i);
         else
-            printf("%d + ", i);
-        sum += i;
+            printf("%d^2 + ", i);
+        sum += pow(i, 2);
     }
     printf("= %d", sum);
 

@@ -1,20 +1,21 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    int n, sum = 0;
+    int n, tich = 1;
     printf("Nhap n: ");
     scanf("%d", &n);
-    printf("S(n) = ");
+    printf("T(n) = ");
     for (int i = 1; i <= n; i++)
     {
         if (i == n)
             printf("%d ", i);
         else
-            printf("%d + ", i);
-        sum += i;
+            printf("%d * ", i);
+        tich *= i;
     }
-    printf("= %d", sum);
+    printf("= %d", tich);
 
     return 0;
 }
